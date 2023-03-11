@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+:root {
+  --main-color: rgb(15, 15, 115);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.navbar .navbar-brand img {
+  width: 150px;
+  height: 50px;
+}
+.navbar .navbar-toggler {
+  color: rgb(9, 9, 88);
+}
+.navbar .navbar-toggler:focus {
+  outline: 0;
+  border: none;
+}
+.navbar ul li {
+  padding: 0px 22px;
+}
+.navbar ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.navbar ul li a:hover {
+  color: var(--main-color);
+}
+.navbar ul li a.active {
+  color: var(--main-color);
+}
+/* Search Widget  */
+.search {
+  position: relative;
+  height: 50px;
+}
+.search .input {
+  background-color: white;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  transition: width 0.3s ease;
+}
+.btn {
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 45px;
+  width: 45px;
+  transition: transform 0.3s ease;
+}
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+.search.active .input {
+  width: 200px;
+  transform: translateY(7px);
+  border: 2px solid var(--main-color);
+}
+.search.active .btn {
+  transform: translateX(198px);
+  color: var(--main-color);
+}
+/* Navbar Ended  */
+/* Header Section  */
+.header {
+  width: 100%;
+  height: 87vh;
+  background-image: url(../assets/images/header-bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.633);
+  position: absolute;
+}
+.header-content {
+  padding: 1rem;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+}
+.header-content h1,
+.header-content h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  padding: 10px 0px;
+}
+.header-content button {
+  border: 0;
+  outline: 0;
+  padding: 0.4rem 2rem;
+  border-radius: 15px;
+  font-weight: 800;
+  margin: 0.5rem 0rem;
+}
+.header-content button:active {
+  transform: scale(0.96);
+}
+.header-content button a {
+  color: black;
+  text-decoration: none;
+}
+.header-content .lorem {
+  font-size: 13px;
+  color: #fff;
+  padding: 1rem 0rem;
+}
+/* Panel Setting */
+.panel {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0rem;
+}
+.panel h1 {
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--main-color);
+}
+/* Panel Ended  */
+/* Three Cards  */
+.three-cards {
+  margin: 2rem 0rem;
+}
+.three-cards .card-text {
+  font-size: 17px;
+  color: gray;
+}
+.three-cards .card-title {
+  color: var(--main-color);
+  font-weight: 700;
+}
+.three-cards .card-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.three-cards .card-btn {
+  border: 0;
+  outline: 0;
+  padding: 8px 55px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+}
+.three-cards .card-btn:active {
+  transform: scale(0.96);
+}
+/* Three Card Endd  */
+/* Two Cards  */
+.two-cards {
+  margin: 2rem 0rem;
+}
+.two-cards .two-img img {
+  border-radius: 10px;
+}
+.two-cards .two-discount {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 10px;
+}
+.two-discount h1 {
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+/* Two Card Ended  */
+/* Explore  */
+.explore {
+  max-width: 1150px;
+  padding: 1rem 0.5rem;
+  margin: auto;
+}
+.explore img {
+  width: 100%;
+  height: 60vh;
+  border-radius: 10px;
+}
+/* Explore Ended  */
+/* Lorem Data  */
+.lorem-wrap .lorem-data h2 {
+  color: var(--main-color);
+}
+/* Lorem Ended  */
+/* Carousel Setting  */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.carousel-text{
+    text-align: center;
+    padding: 1.5rem 0rem;
+    font-size: 22px;
+}
+.text-carousel{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+.owl-theme .owl-dots .owl-dot{
+   display: none;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    display: none;
+}
+.carouse{
+    margin: 2.5rem 0rem;
+}
+/* Carousl ended  */
+
+/* Form Container  */
+.form-container{
+    width: 100%;
+    background-color: var(--main-color);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form-container h1{
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0rem;
+}
+.form-container p{
+    text-align: center;
+    color: #fff;
+    /* padding: 1rem 0rem; */
+}
+.submit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.submit input{
+  padding: 6px 70px;
+  border-radius: 18px;
+  outline: 0;
+  border: 0;
+  text-align: center;
+}
+.submit button{
+  padding: 6px 40px;
+  border: 0;
+  outline: 0;
+  border-radius: 20px;
+
+}
+
+/* @Media Queries  */
+@media (max-width: 1000px) {
+  .header {
+    height: 80vh;
+  }
+  .three-cards .card-text {
+    font-size: 17px;
+  }
+  .header-content h1,
+  .header-content h2 {
+    font-size: 40px;
+    padding: 8px 0px;
+  }
+  .header-content {
+    padding: 0.8rem;
+    bottom: 18%;
+    left: 5%;
+  }
+  .carousel-text{
+    padding: 1rem 0rem;
+    font-size: 20px;
+}
+}
+@media (max-width: 700px) {
+  .header {
+    height: 75vh;
+  }
+  .panel {
+    margin: 2rem 0rem;
+  }
+  .three-cards .card-text {
+    font-size: 16px;
+  }
+  .header-content button {
+    padding: 0.3rem 1.5rem;
+  }
+  .header-content {
+    padding: 0.5rem;
+    bottom: 14%;
+    left: 5%;
+  }
+  .header-content h1,
+  .header-content h2 {
+    padding: 5px 0px;
+    font-size: 30px;
+  }
+  .carousel-text{
+    padding: 0.5rem 0rem;
+    font-size: 18px;
+}
+}
+@media (max-width: 500px) {
+  .header {
+    height: 70vh;
+  }
+  .carousel-text{
+    font-size: 16px;
+}
+  .three-cards .card-text {
+    font-size: 15px;
+  }
+  .header-content {
+    bottom: 10%;
+    left: 5%;
+  }
+  .header-content h1,
+  .header-content h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 450px) {
+  .header-content h1,
+  .header-content h2 {
+    font-size: 24px;
+  }
+  .header {
+    height: 65vh;
+  }
+  .header-content {
+    bottom: 10%;
+    left: 5%;
+  }
+  .carousel-text{
+    font-size: 15px;
+}
+}
